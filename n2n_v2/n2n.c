@@ -183,7 +183,7 @@ char* intoa(uint32_t /* host order */ addr, char* buf, uint16_t buf_len) {
     *--cp = '.';
     addr >>= 8;
   } while (--n > 0);
-
+ 
   /* Convert the string to lowercase */
   retStr = (char*)(cp+1);
 
