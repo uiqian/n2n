@@ -2377,7 +2377,7 @@ int real_main(int argc, char* argv[])
     /* unfortunately, any cmdline quoting used originally is gone, so we can
      * not use the getopt to process the install
      */
-    if (!strncasecmp(effectiveargv[1],"--install",9)) {
+    if (!stricmp(effectiveargv[1],"--install",9)) {
         char *p = strchr(linebuffer,' ') +1; /* skip the argv[0] */
         char *scm_args = strchr(p,' ') +1; /* skip the "--install" */
 
